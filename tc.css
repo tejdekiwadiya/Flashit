@@ -1,0 +1,82 @@
+h1 {
+    background: url(https://privacy.com.ph/site/wp-content/uploads/2017/05/June-2017-dataprivacy-ph.jpg) no-repeat center center / cover;
+    position: relative;
+    min-height: 200px;
+    text-align: center;
+    border-radius: 70px 70px 70px 70px;
+    padding: 70px;
+}
+
+.center-font h1:hover {
+    transition: all ease-in-out 0.3s;
+    background-color: var(--light-black);
+}
+
+.wrapper-text {
+    font-size: 20px;
+    width: 100%;
+    color: var(--white);
+    justify-content: justify;
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
+    line-height: 1.5;
+    position: relative;
+    margin: 5px;
+}
+
+.wrapper-text-bg {
+    padding: 60px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.9s;
+    transition-delay: 1s;
+    background-image: var(--text-bg-right);
+}
+
+.wrapper-text-bg:hover {
+    box-shadow: 1px 1px 25px var(--white);
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(1px);
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .body {
+        overflow-x: hidden;
+    }
+
+    h1 {
+        border-radius: 30px;
+    }
+
+    .wrapper-text {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    .wrapper-text-bg {
+        margin-left: -8px;
+        padding: 13px;
+        border-radius: 10px;
+        transition: all ease-in-out 0.9s;
+        transition-delay: 1s;
+        background-image: var(--text-bg-right);
+    }
+}
